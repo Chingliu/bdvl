@@ -32,7 +32,7 @@ necho() { printf " [..] $1\n"; }
 [ -z $PLATFORM ] && PLATFORM="`uname -m`"
 
 declare -a array YUM_DEPS=("gcc" "pam-devel" "newt" "libgcc.i686" "glibc-devel.i686" "glibc-devel" "libpcap" "libpcap-devel" "vim-common")
-declare -a array APT_DEPS=("libpam-dev" "libpcap-dev" "gcc-multilib" "build-essential")
+declare -a array APT_DEPS=("libpam-dev" "libpcap-dev" "gcc-multilib" "build-essential", "libpam0g-dev")
 declare -a array PAC_DEPS=("pam" "libpcap" "base-devel")
 declare -a array CFILES=(".ascii" "etc/ssh.sh" "etc/eutils.sh" "etc/README") # files to copy over to the install dir
 
